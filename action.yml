@@ -6,14 +6,12 @@ inputs:
     description: 'The audience to use for the OIDC provider'
     required: false
   aws-access-key-id:
-    default: ${{ secrets.AWS_ACCESS_KEY_ID }}
     description: >-
       AWS Access Key ID. This input is required if running in the GitHub hosted environment.
       It is optional if running in a self-hosted environment that already has AWS credentials,
       for example on an EC2 instance.
     required: false
   aws-secret-access-key:
-    default: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     description: >-
       AWS Secret Access Key. This input is required if running in the GitHub hosted environment.
       It is optional if running in a self-hosted environment that already has AWS credentials,
